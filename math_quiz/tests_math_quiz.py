@@ -20,7 +20,7 @@ class TestMathGame(unittest.TestCase):
             self.assertIn(rand_op,choices)
     
     def test_operation(self):
-        # Test if the function operation worl as expected
+        # Test if the function operation work as expected
         test_cases = [
             (5, 2, '+', '5 + 2', 7),
             (3, 4, '*', '3 * 4', 12),
