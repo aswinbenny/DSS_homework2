@@ -30,7 +30,6 @@ def math_quiz():
 
     for _ in range(no_of_operations):
         no_1 = random_integer(1, 10); no_2 = random_integer(1, 5); operator = random_operation()
-
         PROBLEM, ANSWER = operation(no_1, no_2, operator)
         print(f"\nQuestion: {PROBLEM}")
         useranswer = input("Your answer: ")
@@ -38,11 +37,12 @@ def math_quiz():
 
         if useranswer == ANSWER:
             print("Correct! You earned a point.")
-            sum = +1
+            sum = sum + 1
         else:
             print(f"Wrong answer. The correct answer is {ANSWER}.")
 
-    print(f"\nGame over! Your score is: {s}/{t_q}")
+    print(f"\nGame over! Your score is: {sum}/{no_of_operations}")
 
 if __name__ == "__main__":
     math_quiz()
+
